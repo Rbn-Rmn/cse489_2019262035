@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Signup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8CB9BD"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="SignUp"
+            android:textColor="#250F0F"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="8dp">
+
+            <TableRow android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="Name"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:maxLines="2"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="Email:"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="Phone:"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="User ID"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uid"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="16dp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="Password:"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:inputType="numberPassword"
+                    android:maxLines="1" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="Re-Enter Password:"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/rpass"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:inputType="numberPassword"
+                    android:maxLines="1" />
+            </TableRow>
+
+            <CheckBox
+                android:id="@+id/cbremid"
+                android:text="Remember User Id"
+                android:textSize="20sp" />
+
+            <RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Already have an account"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <Button
+                    android:id="@+id/login"
+                    style="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="41dp"
+                    android:layout_toRightOf="@id/tex"
+                    android:background="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:text="log in"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#C6EBC5"
+
+                android:text="Exit"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="|"
+                android:textColor="#3A2323"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#C6EBC5"
+                android:text="Go"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
